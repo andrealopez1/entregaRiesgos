@@ -1,14 +1,5 @@
 
-title: "20180924 MCDA AHP"
-author: "Riesgos"
-date: "24 de sep de 2018"
-output: html_document
----
- 
 
-Edad<- t(matrix(c(1,2,1/3,7,1/2,1,1/5,5,3,5,1,9,1,1/5,1/9,1),nrow=4,ncol=4))
-colnames(Edad) = c("c1","c2","c3","c4")
-rownames(Edad) = c("c1","c2","c3","c4")
 
 Edad<- t(matrix(c(1,2,1/3,7,1/2,1,1/5,5,3,5,1,9,1/7,1/5,1/9,1),nrow=4,ncol=4))
 colnames(Edad) = c("c1","c2","c3","c4")
