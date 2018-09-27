@@ -1,6 +1,3 @@
-
-
-
 Edad<- t(matrix(c(1,2,1/3,7,1/2,1,1/5,5,3,5,1,9,1/7,1/5,1/9,1),nrow=4,ncol=4))
 colnames(Edad) = c("c1","c2","c3","c4")
 rownames(Edad) = c("c1","c2","c3","c4")
@@ -41,7 +38,8 @@ criteriaWeightsPairwiseComparisons <- t(matrix(c(1,1/3,1/5,4,1/2,2,1/6,3,1,1/6,2
                                                nrow=7,ncol=7))
 colnames(criteriaWeightsPairwiseComparisons) = c("Est","Edad","Codeudor","Obligaciones","Capacidad_cred","Salario","Patrimonio")
 rownames(criteriaWeightsPairwiseComparisons) = c("Est","Edad","Codeudor","Obligaciones","Capacidad_cred","Salario","Patrimonio")
-
+library(ahp)
+library(MCDA)
 overall1 <- AHP(criteriaWeightsPairwiseComparisons,alternativesPairwiseComparisonsList)
 
 overall1
